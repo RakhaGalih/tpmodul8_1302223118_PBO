@@ -16,7 +16,10 @@ public class Semut extends Serangga {
     
     @Override
     public void gerak(Koordinat k) {
-        super.setPosisi(k);
+        if(k instanceof Koordinat) {   
+            super.getPosisi().setX(k.getX());
+            super.getPosisi().setY(k.getY());
+        }
     }
     
     @Override

@@ -17,9 +17,10 @@ public class Lebah extends Serangga {
     @Override
     public void gerak(Koordinat k) {
         if(k instanceof Koordinat3D) {
-            k.setX(k.getX());
-            k.setY(k.getY());
-            ((Koordinat3D) k).setZ(((Koordinat3D) k).getZ());
+            super.getPosisi().setX(k.getX());
+            super.getPosisi().setY(k.getY());
+            Koordinat3D posisi = (Koordinat3D) getPosisi();
+            posisi.setZ(((Koordinat3D) k).getZ());
         }
     }
     

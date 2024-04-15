@@ -23,7 +23,7 @@ public class DriverSerangga {
         System.out.println("Warna Lebah : " + L.getWarna());
         L.info();
         
-        L.gerak(new Koordinat3D(35, 45, 55));
+        L.gerak(new Koordinat3D(45, 55, 65));
         L.info();
     }
 }

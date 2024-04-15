@@ -10,12 +10,12 @@ package TP09;
  */
 public abstract class Serangga {
 
-    private Koordinat posisi;
+    private final Koordinat posisi;
     private String warna;
 
-    public Serangga(String warna, Koordinat posisi) {
+    public Serangga(String warna, Koordinat k) {
         this.warna = warna;
-        this.posisi = posisi;
+        this.posisi = k;
     }
 
     public abstract void gerak(Koordinat k);
@@ -24,10 +24,6 @@ public abstract class Serangga {
 
     public Koordinat getPosisi() {
         return posisi;
-    }
-
-    public void setPosisi(Koordinat posisi) {
-        this.posisi = posisi;
     }
 
     public String getWarna() {
